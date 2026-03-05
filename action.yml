@@ -1,0 +1,15 @@
+name: Pending Payload Migration Check
+description: Check whether pending migrations are pending for PayloadCMS and if so report errors to stop deployments.
+
+inputs:
+  paths:
+    description: The paths to check for pending migrations, allows multiple as array. Defaults to the root of the repository.
+    required: false
+    default: "."
+
+outputs:
+  has-pending-migrations:
+    description: Whether there are pending migrations or not
+runs:
+  using: node20
+  main: dist/index.js

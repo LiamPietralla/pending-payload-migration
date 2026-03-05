@@ -1,0 +1,31 @@
+{
+  "name": "pending-payload-migration",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@liamsgit.dev:2222/LiamPietralla/pending-payload-migration-action.git"
+  },
+  "keywords": [
+    "payload",
+    "migrations",
+    "github",
+    "actions",
+    "ci",
+    "cd"
+  ],
+  "author": "Liam Pietralla",
+  "license": "ISC",
+  "description": "Check whether pending migrations are pending for PayloadCMS and if so report errors to stop deployments.",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
