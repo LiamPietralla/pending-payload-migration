@@ -23,7 +23,7 @@ jobs:
           node-version: '18'
       - run: npm install # Install dependencies before running the action
       - name: Check for Pending Payload Migrations
-        uses: LiamPietralla/pending-payload-migration-action@v1.0.0
+        uses: LiamPietralla/pending-payload-migration@v1.0.0
         with:
           paths: "path/to/your/payload/project" # Optional, defaults to root of the repository
 ```
