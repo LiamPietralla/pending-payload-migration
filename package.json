@@ -1,6 +1,6 @@
 {
   "name": "pending-payload-migration",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "build": "ncc build src/index.js -o dist",
